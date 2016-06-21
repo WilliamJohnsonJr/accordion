@@ -1,7 +1,7 @@
 .container {
-  border: 1px solid black;
   width: 400px;
-  height: 1000px; }
+  border: 1px solid #00C6D6;
+  border-color: #0097a3; }
 
 ul {
   padding-left: 0px;
@@ -19,6 +19,12 @@ ul {
   ul li {
     background: white;
     color: black;
-    list-style: none;
-    width: 0px;
-    height: 0px; }
+    list-style: none; }
+
+.disappear {
+  height: 0px;
+  font-size: 0px; }
+
+.appear {
+  transition: all .5s ease-in-out;
+  background: white; }
