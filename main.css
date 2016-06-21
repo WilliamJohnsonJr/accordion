@@ -1,9 +1,10 @@
 .container {
   width: 400px;
-  max-height: 400px;
+  height: 260px;
   border: 1px solid #00C6D6;
   border-color: #0097a3;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 ul {
   padding-left: 0px;
@@ -23,12 +24,25 @@ ul {
     color: black;
     list-style: none; }
 
-.disappear {
-  height: 0px;
-  font-size: 0px;
-  transition: all .5s ease-in-out;
-  background: white; }
+.section1 {
+  z-index: 1; }
 
-.appear {
-  transition: all .5s ease-in-out;
-  background: white; }
+.section2closed {
+  z-index: 2;
+  position: relative;
+  top: 101px; }
+
+.section2open {
+  z-index: 2;
+  position: relative;
+  top: -90px; }
+
+.section3closed {
+  z-index: 3;
+  position: relative;
+  top: -43px; }
+
+.section3open {
+  z-index: 3;
+  position: relative;
+  top: -234px; }
