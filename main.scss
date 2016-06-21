@@ -1,7 +1,9 @@
 .container {
 	width: 400px;
+	max-height: 400px;
 	border: 1px solid #00C6D6;
 	border-color: darken(#00C6D6, 10%);
+	overflow: hidden;
 };
 
 ul {
@@ -32,6 +34,8 @@ ul {
 .disappear{
 	height: 0px;
 	font-size: 0px;
+	transition: all .5s ease-in-out;
+	background: white;
 }
 
 .appear {
