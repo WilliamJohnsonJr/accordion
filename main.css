@@ -72,6 +72,7 @@ ul {
   padding-bottom: 0px;
   padding-right: 13px;
   opacity: .25;
+  border-radius: 5px;
   transition: all .25s ease-in-out;
   z-index: 1; }
   .leftArrow:hover {
@@ -91,6 +92,7 @@ ul {
   padding-bottom: 0px;
   padding-left: 13px;
   opacity: .25;
+  border-radius: 5px;
   transition: all .25s ease-in-out; }
   .rightArrow:hover {
     background: black;

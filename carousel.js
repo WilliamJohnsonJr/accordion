@@ -70,6 +70,17 @@ var image5 = "<img class=\"imgimg img5 hide\" src=\""+images[5] + "\">";
 var image6 = "<img class=\"imgimg img6 hide\" src=\""+images[6] + "\">";
 var imgArray = [image0, image1, image2, image3, image4, image5, image6];
 
+// var title0 = "<span class=\"title0 titles\">"+authTitles[0]+"</span>";
+// var title1 = "<span class=\"title1 titles\">"+authTitles[1]+"</span>";
+// var title2 = "<span class=\"title2 titles\">"+authTitles[2]+"</span>";
+// var title3 = "<span class=\"title3 titles\">"+authTitles[3]+"</span>";
+// var title4 = "<span class=\"title4 titles\">"+authTitles[4]+"</span>";
+// var title5 = "<span class=\"title5 titles\">"+authTitles[5]+"</span>";
+// var title6 = "<span class=\"title6 titles\">"+authTitles[6]+"</span>";
+
+// $(".imgContainer").html(image0+image1+image2+image3+image4+image5+image6+title0+title1+title2+title3+title4+title5+title6);
+
+
 $(".imgContainer").html(image0+image1+image2+image3+image4+image5+image6);
 
 var cycleImg = function (event) {
