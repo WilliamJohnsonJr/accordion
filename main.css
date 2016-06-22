@@ -4,7 +4,9 @@
   border: 1px solid #00C6D6;
   border-color: #0097a3;
   overflow: hidden;
-  position: relative; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
 
 ul {
   padding-left: 0px;
@@ -17,8 +19,7 @@ ul {
     padding-top: 5px;
     padding-left: 5px; }
   ul div:hover {
-    background: #00D9EB;
-    transition: all 0.5s ease-in-out; }
+    background: #00D9EB; }
   ul li {
     background: white;
     color: black;
@@ -27,22 +28,26 @@ ul {
 .section1 {
   z-index: 1; }
 
-.section2closed {
+.section2 {
   z-index: 2;
   position: relative;
-  top: 101px; }
+  top: 101px;
+  transition: all 0.5s ease-in-out; }
 
-.section2open {
+.section2Open {
   z-index: 2;
   position: relative;
-  top: -90px; }
+  top: -90px;
+  transition: all 0.5s ease-in-out; }
 
-.section3closed {
+.section3 {
   z-index: 3;
   position: relative;
-  top: -43px; }
+  top: -43px;
+  transition: all 0.5s ease-in-out; }
 
-.section3open {
+.section3Open {
   z-index: 3;
   position: relative;
-  top: -234px; }
+  top: -234px;
+  transition: all 0.5s ease-in-out; }
