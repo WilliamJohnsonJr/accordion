@@ -59,53 +59,67 @@ $("body").append(div);
 
 var newDiv = $("div")[4];
 
-newDiv.innerHTML = "<div class=\"imgContainerBig\"><div class=\"leftArrow button\">Previous</div><div class=\"imgContainer\"></div><div class=\"rightArrow button\">Next</div></div>";
+newDiv.innerHTML = "<div class=\"imgContainerBig\"><div class=\"leftArrow button\">\<\<</div><div class=\"imgContainer\"></div><div class=\"rightArrow button\">\>\></div></div>";
 
-var image0 = "<img class=\"img0\" src=\""+images[0] + "\">";
-var image1 = "<img class=\"img1\" src=\""+images[1] + "\">";
-var image2 = "<img class=\"img2\" src=\""+images[2] + "\">";
-var image3 = "<img class=\"img3\" src=\""+images[3] + "\">";
-var image4 = "<img class=\"img4\" src=\""+images[4] + "\">";
-var image5 = "<img class=\"img5\" src=\""+images[5] + "\">";
-var image6 = "<img class=\"img6\" src=\""+images[6] + "\">";
+var image0 = "<img class=\"imgimg img0 appear\" src=\""+images[0] + "\">";
+var image1 = "<img class=\"imgimg img1 hide\" src=\""+images[1] + "\">";
+var image2 = "<img class=\"imgimg img2 hide\" src=\""+images[2] + "\">";
+var image3 = "<img class=\"imgimg img3 hide\" src=\""+images[3] + "\">";
+var image4 = "<img class=\"imgimg img4 hide\" src=\""+images[4] + "\">";
+var image5 = "<img class=\"imgimg img5 hide\" src=\""+images[5] + "\">";
+var image6 = "<img class=\"imgimg img6 hide\" src=\""+images[6] + "\">";
 var imgArray = [image0, image1, image2, image3, image4, image5, image6];
 
-$(".imgContainer").html(image0);
+$(".imgContainer").html(image0+image1+image2+image3+image4+image5+image6);
 
 var cycleImg = function (event) {
   var target = event.target;
   console.log(target);
   if ($(target).hasClass("leftArrow")){
-    if ($(".imgContainer").html() == image0){
-        $(".imgContainer").html(image6);
-    } else if ($(".imgContainer").html() == image1){
-        $(".imgContainer").html(image0);
-    } else if ($(".imgContainer").html() == image2){
-        $(".imgContainer").html(image1);
-    } else if ($(".imgContainer").html() == image3){
-        $(".imgContainer").html(image2);
-    } else if ($(".imgContainer").html() == image4){
-        $(".imgContainer").html(image3);
-    } else if ($(".imgContainer").html() == image5){
-        $(".imgContainer").html(image4);
-    } else if ($(".imgContainer").html() == image6){
-        $(".imgContainer").html(image5);
+    if ($(".img0").hasClass("appear")){
+        $(".img0").toggleClass("appear").toggleClass("hide");
+        $(".img6").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img1").hasClass("appear")){
+        $(".img1").toggleClass("appear").toggleClass("hide");
+        $(".img0").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img2").hasClass("appear")){
+        $(".img2").toggleClass("appear").toggleClass("hide");
+        $(".img1").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img3").hasClass("appear")){
+        $(".img3").toggleClass("appear").toggleClass("hide");
+        $(".img2").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img4").hasClass("appear")){
+        $(".img4").toggleClass("appear").toggleClass("hide");
+        $(".img3").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img5").hasClass("appear")){
+        $(".img5").toggleClass("appear").toggleClass("hide");
+        $(".img4").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img6").hasClass("appear")){
+        $(".img6").toggleClass("appear").toggleClass("hide");
+        $(".img5").toggleClass("appear").toggleClass("hide");
     }
   } else if ($(target).hasClass("rightArrow")){
-    if ($(".imgContainer").html() == image0){
-        $(".imgContainer").html(image1);
-    } else if ($(".imgContainer").html() == image1){
-        $(".imgContainer").html(image2);
-    } else if ($(".imgContainer").html() == image2){
-        $(".imgContainer").html(image3);
-    } else if ($(".imgContainer").html() == image3){
-        $(".imgContainer").html(image4);
-    } else if ($(".imgContainer").html() == image4){
-        $(".imgContainer").html(image5);
-    } else if ($(".imgContainer").html() == image5){
-        $(".imgContainer").html(image6);
-    } else if ($(".imgContainer").html() == image6){
-        $(".imgContainer").html(image0);
+    if ($(".img0").hasClass("appear")){
+        $(".img0").toggleClass("appear").toggleClass("hide");
+        $(".img1").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img1").hasClass("appear")){
+        $(".img1").toggleClass("appear").toggleClass("hide");
+        $(".img2").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img2").hasClass("appear")){
+        $(".img2").toggleClass("appear").toggleClass("hide");
+        $(".img3").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img3").hasClass("appear")){
+        $(".img3").toggleClass("appear").toggleClass("hide");
+        $(".img4").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img4").hasClass("appear")){
+        $(".img4").toggleClass("appear").toggleClass("hide");
+        $(".img5").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img5").hasClass("appear")){
+        $(".img5").toggleClass("appear").toggleClass("hide");
+        $(".img6").toggleClass("appear").toggleClass("hide");
+    } else if ($(".img6").hasClass("appear")){
+        $(".img6").toggleClass("appear").toggleClass("hide");
+        $(".img0").toggleClass("appear").toggleClass("hide");
     }
   }
 };

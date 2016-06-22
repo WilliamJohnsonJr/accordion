@@ -62,27 +62,51 @@ ul {
 .leftArrow {
   position: absolute;
   left: 0px;
-  top: 50px;
+  top: 168px;
   background: gray;
   color: white;
+  font-size: 35px;
   width: 50px;
   height: 60px;
-  padding-top: 43px;
+  padding-top: 15px;
   padding-bottom: 0px;
-  padding-right: 13px; }
+  padding-right: 13px;
+  opacity: .25;
+  transition: all .25s ease-in-out;
+  z-index: 1; }
   .leftArrow:hover {
-    background: black; }
+    background: black;
+    opacity: 1; }
 
 .rightArrow {
   position: absolute;
   right: 0px;
-  top: 50px;
+  top: 168px;
   width: 50px;
   height: 60px;
   background: gray;
   color: white;
-  padding-top: 43px;
+  font-size: 35px;
+  padding-top: 15px;
   padding-bottom: 0px;
-  padding-left: 13px; }
+  padding-left: 13px;
+  opacity: .25;
+  transition: all .25s ease-in-out; }
   .rightArrow:hover {
-    background: black; }
+    background: black;
+    opacity: 1; }
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out; }
+
+.appear {
+  opacity: 100;
+  transition: all 0.5s ease-in-out; }
+
+.imgimg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; }
