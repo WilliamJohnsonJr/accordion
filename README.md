@@ -10,3 +10,4 @@ Only the .section2 and .section3 uls need to move in order for the accordion fea
 
 main.js uses jQuery to select the corresponding ul box and reposition it when the div header is clicked by the user.
 
+GitHub Pages page is located at: https://williamjohnsonjr.github.io/accordion/
